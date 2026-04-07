@@ -10,6 +10,10 @@
 
 ![sample](https://github.com/abdullah-erturk/Diskpart-GUI/blob/main/preview.jpg)
 
+## Link:
+
+[![Stable?](https://img.shields.io/badge/Release-v1.svg?style=flat)](https://github.com/abdullah-erturk/Diskpart-GUI/releases)
+
 ### Nedir?
 Diskpart GUI, hem **WinPE** (Windows Preinstallation Environment) hem de **Canlı Windows** (Live OS) ortamları için optimize edilmiş, .NET 8 tabanlı profesyonel bir disk bölümlendirme ve formatlama aracıdır.
 
