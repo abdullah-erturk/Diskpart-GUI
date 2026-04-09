@@ -1,6 +1,6 @@
 <a href="https://buymeacoffee.com/abdullaherturk" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
-# Diskpart GUI v2 - Professional Partitioning Tool
+# Diskpart GUI v3 - Professional Partitioning Tool
 
 [![.NET 8](https://img.shields.io/badge/.NET-8-blueviolet.svg?style=flat-square&logo=dotnet)](https://dotnet.microsoft.com/)
 [![C#](https://img.shields.io/badge/Language-C%23-blue.svg?style=flat-square&logo=csharp)](https://docs.microsoft.com/en-us/dotnet/csharp/)
@@ -12,13 +12,13 @@
 
 ## Link:
 
-[![Stable?](https://img.shields.io/badge/Release-v2-green.svg?style=flat)](https://github.com/abdullah-erturk/Diskpart-GUI/releases)
+[![Stable?](https://img.shields.io/badge/Release-v3-green.svg?style=flat)](https://github.com/abdullah-erturk/Diskpart-GUI/releases)
 
 ### Nedir?
-Diskpart GUI v2, hem **WinPE** (Windows Preinstallation Environment) hem de **Canlı Windows** (Live OS) ortamları için optimize edilmiş, .NET 8 tabanlı profesyonel bir disk bölümlendirme ve formatlama aracıdır.
+Diskpart GUI v3, hem **WinPE** (Windows Preinstallation Environment) hem de **Canlı Windows** (Live OS) ortamları için optimize edilmiş, .NET 8 tabanlı profesyonel bir disk bölümlendirme ve formatlama aracıdır.
 
 ### What is it?
-Diskpart GUI v2 is a professional disk partitioning and formatting tool based on .NET 8, optimized for both **WinPE** (Windows Preinstallation Environment) and **Live Windows** (Live OS) environments.
+Diskpart GUI v3 is a professional disk partitioning and formatting tool based on .NET 8, optimized for both **WinPE** (Windows Preinstallation Environment) and **Live Windows** (Live OS) environments.
 
 ---
 
@@ -26,13 +26,17 @@ Diskpart GUI v2 is a professional disk partitioning and formatting tool based on
 <summary><strong>Türkçe Tanıtım</strong></summary>
 
 ### 🚀 Temel Özellikler
+- **Görsel Disk Haritası**: Disk bölümlendirme yapısını renkli ve orantılı bir grafik üzerinde gösteren dinamik görselleştirme sistemi.
+- **S.M.A.R.T. Sağlık Takibi**: Seçili diskin donanımsal sağlık durumunun (OK/Warning) WMI üzerinden anlık kontrolü.
+- **Medya Tipi Tespiti**: Diskin SSD, NVMe veya HDD olup olmadığını otomatik belirleme zekası.
 - **Modern Bölümleme Mimarisi**: Kurtarma (Recovery) bölümünü diskin en sonuna taşıyan profesyonel yapı.
   > `[ Boot ] ➔ [ Windows ] ➔ [ DATA ] ➔ [ Recovery ]`
 - **Gelişmiş VHD/VHDX Desteği**: Dosya üzerine yazma koruması, işlem doğrulama zekası ve otomatik bağlama.
 - **Hassas Boyutlandırma**: Küçük diskler için ondalıklı GB gösterimi ve akıllı sınır yönetimi (0 GB hatası giderildi).
-- **Akıllı Boyut Dengeleme**: Girilen bölüm boyutları disk kapasitesini aşarsa, Windows bölümünü otomatik olarak küçülterek çakışmaları önler.
-- **WinPE Optimizasyonu**: Formatlanan OS bölümüne istisnasız **C:** harfini atama zekası.
-- **Detaylı Onay Ekranı**: Format işleminden önce yapılacak tüm işlemleri listeleyen profesyonel özet penceresi.
+- **Seçim Koruması**: Dil değişikliği veya liste yenilemede seçili diskin hafızada tutulması.
+- **TopMost Mesaj Kutuları**: Tüm uyarı pencerelerinin WinPE ortamlarında her zaman en üstte kalma garantisi.
+- **Detaylı Onay Ekranı**: Format işleminden önce çok satırlı ve belirgin uyarılarla listelenen profesyonel özet penceresi.
+- **Dayanıklı Altyapı**: WMI servisinin eksik olduğu kısıtlı ortamlarda (bazı modifiye WinPE) bilgilendirici ve kalıcı hata mesajları ile Diskpart işlemlerine kesintisiz devam edebilme gücü.
 - **Çoklu Dil Desteği**: İşletim sistemi diline göre otomatik Türkçe veya İngilizce arayüz.
 
  
@@ -53,13 +57,17 @@ Diskpart GUI v2 is a professional disk partitioning and formatting tool based on
 <summary><strong>English Description</strong></summary>
 
 ### 🚀 Key Features
+- **Visual Disk Map**: Dynamic visualization system showing the partition structure on a colored, proportional graphic.
+- **S.M.A.R.T. Health Monitoring**: Real-time checking of the selected disk's hardware health status (OK/Warning) via WMI.
+- **Media Type Identification**: Automatic identification of disk device types (SSD, NVMe, or HDD).
 - **Modern Partitioning Architecture**: Professional structure that moves the Recovery partition to the end of the disk.
   > `[ Boot ] ➔ [ Windows ] ➔ [ DATA ] ➔ [ Recovery ]`
 - **Enhanced VHD/VHDX Support**: Overwrite protection, operation validation logic, and automatic mounting.
 - **Precise Sizing**: Decimal GB display for small disks and smart boundary management (Fixed 0 GB display issue).
-- **Smart Size Balancing**: Automatically shrinks the Windows partition if total size exceeds capacity, preventing errors.
-- **WinPE Optimization**: Smart drive letter assignment that prioritizes **C:** for the OS partition.
-- **Detailed Confirmation**: A professional summary window listing all planned operations before formatting.
+- **Selection Persistence**: The selected disk is now preserved during language changes or list refreshes.
+- **TopMost Message Boxes**: Guaranteed visibility for all warning popups in WinPE/Live OS environments.
+- **Detailed Confirmation**: A professional summary window with multi-line, prominent warnings listing all planned operations.
+- **Robust Infrastructure**: Ability to continue Diskpart operations seamlessly with informative, persistent error messages in restricted environments (some modified WinPE) where WMI services are missing.
 - **Multi-Language Support**: Automatic Turkish or English interface detection.
 
 ### 📚 Usage Scenarios
