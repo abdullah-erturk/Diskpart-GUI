@@ -85,6 +85,38 @@ Diskpart GUI v3 is a professional disk partitioning and formatting tool based on
 ---
 </details>
 
+<details>
+<summary><strong>Opis v Slovenščini</strong></summary>
+
+### 🚀 Ključne funkcije
+- **Vizualni zemljevid diska**: Dinamični vizualizacijski sistem, ki prikazuje strukturo particij na barvnem, proporcionalnem grafikonu.
+- **S.M.A.R.T. spremljanje zdravja diska**: Preverjanje stanja strojne opreme izbranega diska (OK/opozorilo) v realnem času prek WMI.
+- **Identifikacija vrste medija**: Samodejno prepoznavanje vrste diskov (SSD, NVMe ali HDD).
+- **Sodobna arhitektura particioniranja**: Profesionalna struktura, ki premesti obnovitveno particijo na konec diska.
+  > `[ Boot ] ➔ [ Windows ] ➔ [ DATA ] ➔ [ Recovery ]`
+- **Izboljšana podpora za VHD/VHDX**: Zaščita pred prepisovanjem, logika preverjanja operacij in samodejno pripenjanje.
+- **Natančno določanje velikosti**: Prikaz v decimalnih GB za majhne diske in pametno upravljanje meja (odpravljena težava s prikazom 0 GB).
+- **Ohranjanje izbire**:  Izbrani disk ostane shranjen tudi ob spremembi jezika ali osvežitvi seznama.
+- **Vedno na vrhu – opozorilna okna**: Zagotovljena vidnost vseh opozorilnih pojavnih oken v okoljih WinPE/Live OS.
+- **Podrobno potrjevanje**: Profesionalno okno s povzetki in večvrstičnimi, izstopajočimi opozorili, ki izpiše vse načrtovane operacije.
+- **Robustna infrastruktura**: Brezhibno izvajanje operacij Diskpart z informativnimi, obstojnimi sporočili o napakah v omejenih okoljih (nekateri spremenjeni WinPE), kjer storitve WMI manjkajo.
+- **Večjezična podpora**: Samodejno zaznavanje turškega ali angleškega vmesnika.
+
+### 📚 Scenariji uporabe
+1. **Čista namestitev sistema Windows (WinPE)**: Po zagonu z namestitvenega medija pripravite disk kot GPT in v nekaj sekundah brezhibno ustvarite zagonske particije.
+2. **Upravljanje navideznih diskov**: Ustvarite VHD/VHDX datoteke za testiranje in jih takoj pripnite ter jih particionirajte, kot da bi šlo za fizično strojno opremo.
+3. **Enostavno particioniranje**:  Pripravite nov disk tako, da ga z enim klikom razdelite na podatkovni in Windows del.
+
+---
+
+## 🛠 Tehnične podrobnosti
+- **Ogrodje**: .NET 8 (Windows Forms)
+- **Pogonski mehanizem**: Windows Diskpart.exe
+- **Zahteve**: Skrbniške pravice
+
+---
+</details>
+
 <div align="center">
   
 Made with ❤️ by [Abdullah ERTÜRK](https://github.com/abdullah-erturk)
