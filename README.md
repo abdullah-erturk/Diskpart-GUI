@@ -123,5 +123,5 @@ Made with ❤️ by [Abdullah ERTÜRK](https://github.com/abdullah-erturk)
 
 <div align="center">
 
-[🌐 erturk.netlify.app](https://erturk.netlify.app)  
+[🌐 erturk-dev.netlify.app](https://erturk-dev.netlify.app)  
 </div>
