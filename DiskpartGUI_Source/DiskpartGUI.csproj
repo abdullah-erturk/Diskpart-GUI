@@ -2,7 +2,10 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <!-- <TargetFrameworks>net8.0-windows;net48</TargetFrameworks> -->
+    <TargetFramework>net48</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -13,6 +16,10 @@
     <Version>1.0.0</Version>
     <Authors>Abdullah ERTÜRK</Authors>
     <Description>GUI for Diskpart Utility</Description>
+  </PropertyGroup>
+
+  <!--
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net8.0-windows'">
     <PublishSingleFile>true</PublishSingleFile>
     <SelfContained>true</SelfContained>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
@@ -20,6 +27,13 @@
     <IncludeNativeLibrariesForSelfContained>true</IncludeNativeLibrariesForSelfContained>
     <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
     <IncludeAllContentForSelfContained>true</IncludeAllContentForSelfContained>
+    <ExcludeAllSymbols>true</ExcludeAllSymbols>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+  -->
+
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net48'">
     <ExcludeAllSymbols>true</ExcludeAllSymbols>
     <DebugType>none</DebugType>
     <DebugSymbols>false</DebugSymbols>
@@ -34,8 +48,14 @@
     </None>
   </ItemGroup>
 
-  <ItemGroup>
+  <!--
+  <ItemGroup Condition="'$(TargetFramework)' == 'net8.0-windows'">
     <PackageReference Include="System.Management" Version="8.0.0" />
+  </ItemGroup>
+  -->
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net48'">
+    <Reference Include="System.Management" />
   </ItemGroup>
 
 </Project>

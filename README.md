@@ -1,8 +1,8 @@
 <a href="https://buymeacoffee.com/abdullaherturk" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
-# Diskpart GUI v3 - Professional Partitioning Tool
+# Diskpart GUI v4 - Professional Partitioning Tool
 
-[![.NET 8](https://img.shields.io/badge/.NET-8-blueviolet.svg?style=flat-square&logo=dotnet)](https://dotnet.microsoft.com/)
+[![.NET Framework 4.8](https://img.shields.io/badge/.NET_Framework-4.8-blueviolet.svg?style=flat-square&logo=dotnet)](https://dotnet.microsoft.com/)
 [![C#](https://img.shields.io/badge/Language-C%23-blue.svg?style=flat-square&logo=csharp)](https://docs.microsoft.com/en-us/dotnet/csharp/)
 [![WinPE Ready](https://img.shields.io/badge/WinPE-Optimized-orange.svg?style=flat-square)](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-intro)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](https://opensource.org/licenses/MIT)
@@ -12,13 +12,13 @@
 
 ## Link:
 
-[![Stable?](https://img.shields.io/badge/Release-v3-green.svg?style=flat)](https://github.com/abdullah-erturk/Diskpart-GUI/releases)
+[![Stable?](https://img.shields.io/badge/Release-v4-green.svg?style=flat)](https://github.com/abdullah-erturk/Diskpart-GUI/releases)
 
 ### Nedir?
-Diskpart GUI v3, hem **WinPE** (Windows Preinstallation Environment) hem de **Canlı Windows** (Live OS) ortamları için optimize edilmiş, .NET 8 tabanlı profesyonel bir disk bölümlendirme ve formatlama aracıdır.
+Diskpart GUI v4, hem **WinPE** (Windows Preinstallation Environment) hem de **Canlı Windows** (Live OS) ortamları için optimize edilmiş, .NET Framework 4.8 tabanlı profesyonel bir disk bölümlendirme ve formatlama aracıdır.
 
 ### What is it?
-Diskpart GUI v3 is a professional disk partitioning and formatting tool based on .NET 8, optimized for both **WinPE** (Windows Preinstallation Environment) and **Live Windows** (Live OS) environments.
+Diskpart GUI v4 is a professional disk partitioning and formatting tool based on .NET Framework 4.8, optimized for both **WinPE** (Windows Preinstallation Environment) and **Live Windows** (Live OS) environments.
 
 ---
 
@@ -46,7 +46,7 @@ Diskpart GUI v3 is a professional disk partitioning and formatting tool based on
 3. **Veri Diski Hazırlama**: Yeni aldığınız bir diski tek tıkla DATA ve Windows bölümlerine senkronize bir şekilde ayırabilirsiniz.
 
 ## 🛠 Teknik Detaylar
-- **Framework**: .NET 8 (Windows Forms)
+- **Framework**: .NET Framework 4.8 (Windows Forms)
 - **Backend Engine**: Windows Diskpart.exe
 - **Gereksinimler**: Yönetici Hakları
 ---
@@ -78,7 +78,7 @@ Diskpart GUI v3 is a professional disk partitioning and formatting tool based on
 ---
 
 ## 🛠 Technical Details
-- **Framework**: .NET 8 (Windows Forms)
+- **Framework**: .NET Framework 4.8 (Windows Forms)
 - **Backend Engine**: Windows Diskpart.exe
 - **Requirements**: Administrator Privileges
 
@@ -110,7 +110,7 @@ Diskpart GUI v3 is a professional disk partitioning and formatting tool based on
 ---
 
 ## 🛠 Tehnične podrobnosti
-- **Ogrodje**: .NET 8 (Windows Forms)
+- **Ogrodje**: .NET Framework 4.8 (Windows Forms)
 - **Pogonski mehanizem**: Windows Diskpart.exe
 - **Zahteve**: Skrbniške pravice
 

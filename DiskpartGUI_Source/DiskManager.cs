@@ -82,8 +82,8 @@ namespace DiskpartGUI
                 string diskType = typeMap.ContainsKey(index) ? typeMap[index] : "HDD";
                 if (diskType == "HDD")
                 {
-                    if (model.Contains("NVMe", StringComparison.OrdinalIgnoreCase)) diskType = "NVMe";
-                    else if (model.Contains("SSD", StringComparison.OrdinalIgnoreCase)) diskType = "SSD";
+                    if (model.IndexOf("NVMe", StringComparison.OrdinalIgnoreCase) >= 0) diskType = "NVMe";
+                    else if (model.IndexOf("SSD", StringComparison.OrdinalIgnoreCase) >= 0) diskType = "SSD";
                 }
 
                 disks.Add(new DiskItem

@@ -59,7 +59,7 @@ namespace DiskpartGUI
             cmbDisks.FormattingEnabled = true;
             cmbDisks.Location = new Point(12, 32);
             cmbDisks.Name = "cmbDisks";
-            cmbDisks.Size = new Size(418, 23);
+            cmbDisks.Size = new Size(448, 23);
             cmbDisks.TabIndex = 0;
             cmbDisks.SelectedIndexChanged += cmbDisks_SelectedIndexChanged;
             // 
@@ -125,9 +125,9 @@ namespace DiskpartGUI
             btnFormat.FlatStyle = FlatStyle.Flat;
             btnFormat.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             btnFormat.ForeColor = Color.White;
-            btnFormat.Location = new Point(466, 28);
+            btnFormat.Location = new Point(506, 15);
             btnFormat.Name = "btnFormat";
-            btnFormat.Size = new Size(146, 32);
+            btnFormat.Size = new Size(210, 54);
             btnFormat.TabIndex = 6;
             btnFormat.Text = "FORMAT DISK";
             btnFormat.UseVisualStyleBackColor = false;
@@ -142,7 +142,7 @@ namespace DiskpartGUI
             txtOutput.Location = new Point(12, 210);
             txtOutput.Name = "txtOutput";
             txtOutput.ReadOnly = true;
-            txtOutput.Size = new Size(726, 254);
+            txtOutput.Size = new Size(811, 254);
             txtOutput.TabIndex = 7;
             txtOutput.Text = "";
             // 
@@ -188,7 +188,7 @@ namespace DiskpartGUI
             pnlDiskMap.Controls.Add(pnlPartBoot);
             pnlDiskMap.Location = new Point(12, 168);
             pnlDiskMap.Name = "pnlDiskMap";
-            pnlDiskMap.Size = new Size(726, 35);
+            pnlDiskMap.Size = new Size(811, 35);
             pnlDiskMap.TabIndex = 11;
             pnlDiskMap.Click += ClearFocus_Click;
             // 
@@ -238,7 +238,7 @@ namespace DiskpartGUI
             // 
             // btnRefresh
             // 
-            btnRefresh.Location = new Point(431, 30);
+            btnRefresh.Location = new Point(466, 30);
             btnRefresh.Name = "btnRefresh";
             btnRefresh.Size = new Size(34, 23);
             btnRefresh.TabIndex = 13;
@@ -277,14 +277,14 @@ namespace DiskpartGUI
             pnlFooter.Dock = DockStyle.Bottom;
             pnlFooter.Location = new Point(0, 470);
             pnlFooter.Name = "pnlFooter";
-            pnlFooter.Size = new Size(750, 30);
+            pnlFooter.Size = new Size(833, 30);
             pnlFooter.TabIndex = 16;
             pnlFooter.Click += ClearFocus_Click;
             // 
             // lnkGithub
             // 
             lnkGithub.AutoSize = true;
-            lnkGithub.Location = new Point(693, 8);
+            lnkGithub.Location = new Point(776, 8);
             lnkGithub.Name = "lnkGithub";
             lnkGithub.Size = new Size(45, 15);
             lnkGithub.TabIndex = 2;
@@ -295,7 +295,7 @@ namespace DiskpartGUI
             // lnkAbout
             // 
             lnkAbout.AutoSize = true;
-            lnkAbout.Location = new Point(343, 8);
+            lnkAbout.Location = new Point(383, 8);
             lnkAbout.Name = "lnkAbout";
             lnkAbout.Size = new Size(40, 15);
             lnkAbout.TabIndex = 1;
@@ -320,9 +320,9 @@ namespace DiskpartGUI
             btnCreateVhd.FlatStyle = FlatStyle.Flat;
             btnCreateVhd.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnCreateVhd.ForeColor = Color.White;
-            btnCreateVhd.Location = new Point(550, 125);
+            btnCreateVhd.Location = new Point(622, 121);
             btnCreateVhd.Name = "btnCreateVhd";
-            btnCreateVhd.Size = new Size(185, 30);
+            btnCreateVhd.Size = new Size(201, 30);
             btnCreateVhd.TabIndex = 17;
             btnCreateVhd.Text = "CREATE VHD/VHDX";
             btnCreateVhd.UseVisualStyleBackColor = false;
@@ -330,18 +330,18 @@ namespace DiskpartGUI
             // 
             // numVhdSize
             // 
-            numVhdSize.Location = new Point(668, 93);
+            numVhdSize.Location = new Point(749, 89);
             numVhdSize.Maximum = new decimal(new int[] { 1000, 0, 0, 0 });
             numVhdSize.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             numVhdSize.Name = "numVhdSize";
-            numVhdSize.Size = new Size(66, 23);
+            numVhdSize.Size = new Size(74, 23);
             numVhdSize.TabIndex = 18;
             numVhdSize.Value = new decimal(new int[] { 70, 0, 0, 0 });
             // 
             // lblVhdSize
             // 
             lblVhdSize.AutoSize = true;
-            lblVhdSize.Location = new Point(550, 97);
+            lblVhdSize.Location = new Point(622, 93);
             lblVhdSize.Name = "lblVhdSize";
             lblVhdSize.Size = new Size(98, 15);
             lblVhdSize.TabIndex = 19;
@@ -350,7 +350,7 @@ namespace DiskpartGUI
             // lblLang
             // 
             lblLang.AutoSize = true;
-            lblLang.Location = new Point(676, 10);
+            lblLang.Location = new Point(758, 18);
             lblLang.Name = "lblLang";
             lblLang.Size = new Size(36, 15);
             lblLang.TabIndex = 21;
@@ -360,9 +360,9 @@ namespace DiskpartGUI
             // 
             cmbLang.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbLang.FormattingEnabled = true;
-            cmbLang.Location = new Point(652, 32);
+            cmbLang.Location = new Point(733, 40);
             cmbLang.Name = "cmbLang";
-            cmbLang.Size = new Size(86, 23);
+            cmbLang.Size = new Size(90, 23);
             cmbLang.TabIndex = 22;
             cmbLang.SelectedIndexChanged += cmbLang_SelectedIndexChanged;
             // 
@@ -381,7 +381,7 @@ namespace DiskpartGUI
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(750, 500);
+            ClientSize = new Size(833, 500);
             Controls.Add(lblDiskInfo);
             Controls.Add(cmbLang);
             Controls.Add(lblLang);
@@ -409,7 +409,7 @@ namespace DiskpartGUI
             MaximizeBox = false;
             Name = "MainForm";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Diskpart GUI v3 | made by Abdullah ERTÜRK";
+            Text = "Diskpart GUI v4 | made by Abdullah ERTÜRK";
             Load += MainForm_Load;
             Click += ClearFocus_Click;
             ((System.ComponentModel.ISupportInitialize)numBootSize).EndInit();
