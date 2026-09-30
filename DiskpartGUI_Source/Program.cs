@@ -27,7 +27,7 @@ namespace DiskpartGUI
             }
             catch (Exception ex)
             {
-                MessageBox.Show(null, $"CRITICAL STARTUP ERROR:\n{ex.Message}\n\nStack:\n{ex.StackTrace}", "Startup Failure", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                MessageBox.Show($"CRITICAL STARTUP ERROR:\n{ex.Message}\n\nStack:\n{ex.StackTrace}", "Startup Failure", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
             }
         }
 

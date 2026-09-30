@@ -10,12 +10,24 @@ namespace DiskpartGUI
     public static class Localization
     {
         private static Dictionary<string, string> _texts = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
-        public static string CurrentLanguage { get; private set; } = "tr";
+        public static string CurrentLanguage { get; private set; } = "en";
 
         public static void Initialize()
         {
-            // Detect system language
-            string culture = CultureInfo.CurrentUICulture.TwoLetterISOLanguageName.ToLower();
+            string culture = "";
+            string configPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Lang", "config.txt");
+            try
+            {
+                if (File.Exists(configPath))
+                    culture = File.ReadAllText(configPath).Trim().ToLower();
+            }
+            catch { }
+
+            if (string.IsNullOrEmpty(culture))
+            {
+                // Detect system language
+                culture = CultureInfo.CurrentUICulture.TwoLetterISOLanguageName.ToLower();
+            }
             
             string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Lang", culture + ".ini");
             
@@ -25,8 +37,8 @@ namespace DiskpartGUI
             }
             else
             {
-                // Fallback to Turkish if system language is not supported
-                LoadLanguage("tr");
+                // Fallback to English if system language is not supported
+                LoadLanguage("en");
             }
         }
 
@@ -53,9 +65,19 @@ namespace DiskpartGUI
             catch { }
         }
 
+        public static void SaveLanguagePreference(string langCode)
+        {
+            try
+            {
+                string configPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Lang", "config.txt");
+                File.WriteAllText(configPath, langCode);
+            }
+            catch { }
+        }
+
         public static string Get(string key)
         {
-            if (_texts.TryGetValue(key, out string? value)) 
+            if (_texts.TryGetValue(key, out string? value) && value != null) 
                 return value.Replace("\\n", Environment.NewLine);
             return key;
         }

@@ -31,7 +31,7 @@ namespace DiskpartGUI
 
             // Set Icon
             try { this.Icon = new Icon("ico.ico"); } catch { }
-            this.Text = "Diskpart GUI v3 | made by Abdullah ERTÜRK";
+            this.Text = "Diskpart GUI v4 | made by Abdullah ERTÜRK";
 
             // Init Languages Dynamically
             var langs = Localization.GetAvailableLanguages();
@@ -216,15 +216,15 @@ namespace DiskpartGUI
             double curWin = GetCurrentValue(numWindowsSize);
             double curRec = hasRec ? GetCurrentValue(numRecoverySize) : 0;
 
-            _toolTip.SetToolTip(pnlPartBoot, $"{Localization.Get("UI_BootSize")?.Replace("(MB)", "").Replace(":", "").Trim()}: {curBoot} MB");
-            _toolTip.SetToolTip(pnlPartWin, $"{Localization.Get("UI_WindowsSize")?.Replace("(GB)", "").Replace(":", "").Trim()}: {curWin} GB");
+            _toolTip.SetToolTip(pnlPartBoot, $"{Localization.Get("UI_BootSize").Replace("(MB)", "").Replace(":", "").Trim()}: {curBoot} MB");
+            _toolTip.SetToolTip(pnlPartWin, $"{Localization.Get("UI_WindowsSize").Replace("(GB)", "").Replace(":", "").Trim()}: {curWin} GB");
             
             if (hasData)
                 _toolTip.SetToolTip(pnlPartData, $"DATA: {remainingGb:F1} GB");
             else
                 _toolTip.SetToolTip(pnlPartData, null);
 
-            _toolTip.SetToolTip(pnlPartRec, $"{Localization.Get("UI_CreateRecovery")?.Replace("(MB)", "").Replace(":", "").Trim()}: {curRec} MB");
+            _toolTip.SetToolTip(pnlPartRec, $"{Localization.Get("UI_CreateRecovery").Replace("(MB)", "").Replace(":", "").Trim()}: {curRec} MB");
         }
 
         private double GetCurrentValue(NumericUpDown num)
@@ -581,7 +581,7 @@ namespace DiskpartGUI
 
         private void lnkWebsite_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            OpenUrl("https://erturk.netlify.app");
+            OpenUrl("https://erturk-dev.netlify.app");
         }
 
         private void lnkAbout_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -602,6 +602,7 @@ namespace DiskpartGUI
             if (cmbLang.SelectedItem is LanguageInfo selected)
             {
                 Localization.LoadLanguage(selected.Code);
+                Localization.SaveLanguagePreference(selected.Code);
             }
             
             txtOutput.Clear();
