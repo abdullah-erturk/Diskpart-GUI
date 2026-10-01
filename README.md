@@ -16,9 +16,11 @@
 
 ### Nedir?
 Diskpart GUI v4, hem **WinPE** (Windows Preinstallation Environment) hem de **Canlı Windows** (Live OS) ortamları için optimize edilmiş, .NET Framework 4.8 tabanlı profesyonel bir disk bölümlendirme ve formatlama aracıdır.
+Şu anda **10 farklı dil desteği** sunmaktadır: Türkçe, İngilizce, Almanca, Fransızca, İtalyanca, Japonca, Korece, Slovence, Basitleştirilmiş Çince ve Geleneksel Çince.
 
 ### What is it?
 Diskpart GUI v4 is a professional disk partitioning and formatting tool based on .NET Framework 4.8, optimized for both **WinPE** (Windows Preinstallation Environment) and **Live Windows** (Live OS) environments.
+It currently supports **10 different languages**: English, Turkish, German, French, Italian, Japanese, Korean, Slovenian, Simplified Chinese, and Traditional Chinese.
 
 ---
 
